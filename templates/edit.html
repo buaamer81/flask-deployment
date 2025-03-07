@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit User</title>
+</head>
+<body>
+    <h1>Edit User</h1>
+    <form action="/edit/{{ user['id'] }}" method="post">
+        <input type="text" name="name" value="{{ user['name'] }}" required>
+        <input type="email" name="email" value="{{ user['email'] }}" required>
+        <input type="number" name="age" value="{{ user['age'] }}" required>
+        <button type="submit">Update User</button>
+    </form>
+</body>
+</html>
